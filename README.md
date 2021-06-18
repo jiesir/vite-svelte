@@ -56,7 +56,7 @@ yarn clean:lib # 删除node_modules，兼容window系统
 │   │   │   ├── DM0 (子模块1)
 │   │   │   │   ├── DM0001 (子页面1)
 │   │   │   │   │   ├── index.less (该页面样式)
-│   │   │   │   │   └── index.jsx (该页面实体)
+│   │   │   │   │   └── index.svelte (该页面实体)
 │   │   │   │   ├── DM0002 (子页面2)
 │   │   │   │   └── ...
 │   │   │   ├── DM1 (子模块2)
@@ -69,17 +69,18 @@ yarn clean:lib # 删除node_modules，兼容window系统
 │   ├── utils (工具文件)
 │   │   ├── console
 │   │   ├── loader
+│   │   ├── router
 │   │   ├── store
 │   │   ├── bridge.js
 │   │   ├── proxy.ts
 │   │   ├── tools.js
 │   │   └── validate.js
-│   ├── Router.jsx (路由文件)
-│   └── main.jsx (入口文件)
+│   ├── App.svelte (路由文件)
+│   └── main.ts (入口文件)
 ├── static (静态资源,外部公共组件等)
 ├── index.html
 ├── package.json
-├── postcss.config.ts
+├── postcss.config.js
 ├── README.md
 ├── tsconfig.ts
 └── vite.config.ts
